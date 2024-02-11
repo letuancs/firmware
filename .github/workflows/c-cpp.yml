@@ -1,0 +1,23 @@
+Tên:  C/C PHIÊN BẢN TIỂU LONG
+
+Lên.:
+ Rặn đi. :
+ Cành cây :  [... "Thưa thầy" .
+ Kéo bản kiểm tra lại :
+ Cành cây :  [... "Thưa thầy" .
+
+Việc làm.:
+ Xây dựng :
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: configure
+      run: ./configure
+    - name: make
+      run: make
+    - name: make check
+      run: make check
+    - name: make distcheck
+      run: make distcheck
